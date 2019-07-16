@@ -17,6 +17,9 @@ import { TrabajadorViewComponent } from './trabajador/trabajador-view/trabajador
 import { Error404Component } from './page/error404/error404.component';
 import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
+import { AdminUserComponent } from './admin/user/admin-user/admin-user.component';
+import { AdminResourceComponent } from './admin/resource/admin-resource/admin-resource.component';
+import { AdminClientComponent } from './admin/client/admin-client/admin-client.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { LoginComponent } from './page/login/login.component';
     TrabajadorViewComponent,
     Error404Component,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    AdminUserComponent,
+    AdminResourceComponent,
+    AdminClientComponent
   ],
   imports: [
     BrowserModule,

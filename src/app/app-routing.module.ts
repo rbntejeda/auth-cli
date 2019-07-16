@@ -5,6 +5,9 @@ import { TrabajadorAdminComponent } from './trabajador/trabajador-admin/trabajad
 import { TrabajadorViewComponent } from './trabajador/trabajador-view/trabajador-view.component';
 import { Error404Component } from './page/error404/error404.component';
 import { HomeComponent } from './page/home/home.component';
+import { AdminUserComponent } from './admin/user/admin-user/admin-user.component';
+import { AdminClientComponent } from './admin/client/admin-client/admin-client.component';
+import { AdminResourceComponent } from './admin/resource/admin-resource/admin-resource.component';
 
 const routes: Routes = [
   {
@@ -18,6 +21,24 @@ const routes: Routes = [
       {
         path: ':id',
         component: TrabajadorViewComponent
+      }
+    ]
+  },
+  {
+    path: 'admin',
+    component: MainLayoutComponent,
+    children: [
+      {
+        path: 'user',
+        component: AdminUserComponent
+      },
+      {
+        path: 'client',
+        component: AdminClientComponent
+      },
+      {
+        path: 'resource',
+        component: AdminResourceComponent
       }
     ]
   },
