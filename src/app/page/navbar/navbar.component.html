@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+  <a class="navbar-brand" [routerLink]="['']">
+    Copec
+  </a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed= !isCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapseBasic" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/persona" routerLinkActive="active">Personas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/history" routerLinkActive="active">Historial</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <!-- <li class="nav-item">
+        <a class="nav-link active" style="cursor: pointer;" (click)="profile()">Pefil</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link active" style="cursor: pointer;" (click)="logout()">Cerrar
+          Sesion</a>
+      </li>
+    </ul>
+  </div>
+</nav>
